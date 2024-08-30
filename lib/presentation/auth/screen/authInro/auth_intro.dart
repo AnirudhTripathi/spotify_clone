@@ -16,10 +16,9 @@ class AuthIntro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: CustomAppBar(),
+      appBar: CustomAppBar(),
       body: Stack(
         children: [
-          CustomAppBar(),
           Align(
             alignment: Alignment.bottomLeft,
             child: Image.asset(
@@ -83,7 +82,7 @@ class AuthIntro extends StatelessWidget {
                           changeColor: true,
                           color: Colors.grey.withOpacity(.25),
                           onPressed: () {
-                                context.pushNamed(AppRouter.signInScreen);
+                            context.pushNamed(AppRouter.signInScreen);
                           },
                           title: "Sign In",
                         ),
